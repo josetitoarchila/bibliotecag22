@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+    <link href="css/estilo_bootstrap.css" rel="stylesheet" />
+    <title>Ejercicio Bootstrap</title>
+</head>
+<body>
+    
+    <!--<p onclick="alert('hizo un clic sobre el parrafo')">parraro de prueba</p>-->
+    <div class="container-lg">
+        <div class="row">
+            <!--logo-->
+            <div class="caja1 col-12 col-md-6 col-xl-6">
+                <img class="estilo-logo" src="img/logo1.jpg" alt="Bibioteca G22" />
+            </div>
+            <!--titulo-->
+            <div class="caja2 col-12 col-md-6 col-xl-6">
+                <h2>LIBRERIA GRUPO 22</h2>
+            </div>
+            <!--menu-->
+            
+            <div class="caja3 col-12 col-md-12 col-xl-12">
+                <nav>
+                    <ul>
+                        <li><a href="https://www.mozilla.com/" target="_blank">Libros</a></li>
+                        <li><a href="https://www.mozilla.com/" target="_blank">Autores</a></li>
+                        <li><a href="https://www.mozilla.com/" target="_blank">Socios</a></li>
+                    </ul>
+                <nav>
+            </div>
+        </div>
+    </div>
+    <!--crear formulario-->
+    <div class="container-lg">
+        <div class="row">
+                <div class="col-1 col-md-3 formulario1"></div>
+                <div class="col-12 col-md-6 formulario2">
+                    <!--ojo en el form debe ir onsubmit return false-->
+                    <form id="formulario_sumar" onsubmit="return false">
+                        <!--Se creo un estilo sobre la etiqueta label-->
+                        <label class="label-form" id="label_numero" for="numero1">Ingresar numero 1</label>
+                        <input class="form-control" id="numero1" type="number"/>
+                        <p id="parrafo_validar_numero1" class="text-success"></p>
+
+
+                        
+                        <label class="label-form"  id="label_numero2" for="numero2">Ingresar numero 2</label>
+                        <input class="form-control" id="numero2" type="number"/>
+                        <p id="parrafo_validar_numero2" class="text-success"></p>                        
+                        
+                        
+        
+                        </input>
+                        <br /><br />
+                        <input class="btn btn-outline-primary boton-formulario" type="submit" value="Cancelar" id="btnCancelar" />
+                        <input class="btn btn-outline-primary boton-formulario" type="submit" value="Calculadora" id="btnSumar" onclick="realizar_operaciones_matematicas()" />
+                    </form>
+
+                    <br /><br /><br />
+                    <div id="div_sumar" class="p-3 mb-2 bg-primary text-white"></div>
+                    <div id="div_restar" class="p-3 mb-2 bg-secondary text-white"></div>
+                    <div id="div_multiplicar" class="p-3 mb-2 bg-success text-white"></div>
+
+                </div>
+                <div class="col-1 col-md-3 formulario3"></div>
+        </div>
+    </div>
+    <br /><br /><br /><br />
+    <div id="caja-crear-etiquetas">
+
+
+    </div>
+
+
+    <h4 style="text-align: center">ejercicios javascript</h4>
+    <script src="js/suma.js"></script>
+
+
+    </body>
+</html>
